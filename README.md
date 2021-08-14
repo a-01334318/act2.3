@@ -2,7 +2,7 @@
 # Act 2.3 - Actividad Integral estructura de datos lineales (Evidencia Competencia)
 
 ## <span style="color: rgb(26, 99, 169);">¿Qué tengo que hacer?</span>
-ccede a la siguiente liga: HTTP y acepta la tarea. Esto creará tu repositorio de trabajo. En él, encontrarás archivos de entrada, así como las salidas esperadas que podrás usar para probar tu implementación. También encontrarás un archivo "main.cpp". Ahí deberás implementar tu solución. En el archivo deberás colocar en la parte superior, en comentarios, tus datos. Por ejemplo:
+Accede a la siguiente liga: [Act. 2.3](https://classroom.github.com/a/9tLXPmMb) y acepta la tarea. Esto creará tu repositorio de trabajo. En él, encontrarás archivos de entrada, así como las salidas esperadas que podrás usar para probar tu implementación. También encontrarás un archivo "main.cpp". Ahí deberás implementar tu solución. En el archivo deberás colocar en la parte superior, en comentarios, tus datos. Por ejemplo:
 ```
 // =========================================================
 // File: main.cpp
