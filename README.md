@@ -38,7 +38,7 @@ mar 20 0 0
 ```
 Para probar tu implementación, compila tu programa con el comando:
 ```
-g++ main.cpp -o app
+g++ -Wall -Wextra -Wpedantic -std=c++11 main.cpp -o app
 ```
 Posteriormente, prueba con cada uno de los archivos de entrada de prueba que encontrarás en este repositorio (input1.txt, input2.txt, input3.txt, input4.txt). Los resultados que debes obtener se encuentran en los archivos llamados output1.txt, output1.txt, output1.txt y output1.txt. Para realizar las pruebas, puedes usar las siguientes líneas de código. Por ejemplo, si queremos probar con el archivo de prueba "input1.txt".
 ```
