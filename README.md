@@ -18,24 +18,50 @@ El canal de Suez es un canal navegable que conecta el mar Mediterráneo con el m
 ```
 Ejemplo:
 ```
-3-jan-20 13:45 M 8PAK7
+03-01-20 13:45 M 8PAK7
 ```
-Donde el punto de entrada puede ser **M – Mar Mediterráneo** y **R – Mar Rojo**.
+Donde:
+* El punto de entrada puede ser **M – Mar Mediterráneo** y **R – Mar Rojo**.
+* La fecha estará entre **01-ENE-2020** y **31-DIC-2020**.
+* El tiempo estará en formato de 24 Hrs.
 
-En equipos de dos personas, hacer una aplicación que:
-1. Solicite el nombre del archivo de entrada (Ej. canal.txt) y lo abra, almacenando los datos en dos listas encadenadas, una para los que entran por el Mar Mediterráneo y otra para los buques que entran por el mar Rojo.
-2. Ordene ambas listas encadenadas por UBI + Fecha (primero por UBI, al haber empate ordenar por fecha).
-3. Solicite al usuario la serie a buscar (los primeros tres caracteres de el UBI).
-4. Despliegue mes por mes (empezando por el primer mes que venga un buque de esa serie y terminando en el mes de la última entrada) la cantidad de entrada de buques de esa serie por cada una de las entradas con el siguiente formato:
+## <span style="color: rgb(26, 99, 169);">**Entrada**</span>
+La primera línea de entrada contiene dos elementos: un entero *n*, el número de barcos que ha entrado al canal, y una cadena de 3 tres caracteres *prefix*, el prefijo del UBI a búscar. Las siguientes *n* líneas; contiene el registro de los barcos que han entrado al canal con el formato descrito anteriormente. Todas las fechas 
+
+## <span style="color: rgb(26, 99, 169);">**Salida**</span>
+Deberás desplegar sólo los registros cuyo UBI empiece con *prefix*, ordenados por fecha.
+
+## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada**</span>
 ```
-<mes><año> <cant-M> <cant-R>
+16 2HU <br>
+01-01-20 00:17 R 2HUN5
+01-01-20 00:37 R 2AET2
+01-01-20 00:57 M 2HUQ5
+01-01-20 01:17 M 2FRW0
+01-01-20 01:37 M 4MXV8
+01-01-20 01:57 R 2HUG7
+01-01-20 02:17 R 1KIH9
+01-01-20 02:37 R 2HUX2
+01-01-20 02:57 M 3CFE2
+01-01-20 03:17 R 1TLD0
+01-01-20 03:37 R 3FRF4
+01-01-20 03:57 R 2HUK8
+01-01-20 04:17 M 0CFR7
+01-01-20 04:37 R 0TQL9
+01-01-20 04:57 R 2HUS4
+01-01-20 05:17 R 0FRX0
 ```
-Ejemplo:
+
+## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida**</span>
 ```
-jan 20 5 3
-feb 20 2 4
-mar 20 0 0
+01-01-20 00:17 R 2HUN5
+01-01-20 00:57 M 2HUQ5
+01-01-20 01:57 R 2HUG7
+01-01-20 02:37 R 2HUX2
+01-01-20 03:57 R 2HUK8
+01-01-20 04:57 R 2HUS4
 ```
+
 Para probar tu implementación, compila tu programa con el comando:
 ```
 g++ -std=c++11 main.cpp -o app
