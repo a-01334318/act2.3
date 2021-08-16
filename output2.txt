@@ -1,0 +1,12 @@
+jan	9	3
+feb	5	4
+mar	11	7
+apr	4	8
+may	7	1
+jun	7	2
+jul	4	3
+aug	1	6
+sep	1	5
+oct	13	4
+nov	8	6
+dec	6	9
