@@ -26,40 +26,54 @@ Donde:
 * El tiempo estará en formato de 24 Hrs.
 
 ## <span style="color: rgb(26, 99, 169);">**Entrada**</span>
-La primera línea de entrada contiene dos elementos: un entero *n*, el número de barcos que ha entrado al canal, y una cadena de 3 tres caracteres *prefix*, el prefijo del UBI a búscar. Las siguientes *n* líneas; contiene el registro de los barcos que han entrado al canal con el formato descrito anteriormente. Todas las fechas 
+La primera línea de entrada contiene dos elementos: un entero *n*, el número de barcos que ha entrado al canal, y una cadena de 3 tres caracteres *prefix*, el prefijo del UBI a búscar. Las siguientes *n* líneas; contiene el registro de los barcos que han entrado al canal con el formato descrito anteriormente. Todas las fechas
 
 ## <span style="color: rgb(26, 99, 169);">**Salida**</span>
-Deberás desplegar sólo los registros cuyo UBI empiece con *prefix*, ordenados por fecha.
+Deberás desplegar el listas por mes de los buques cuyo UBI empiece con *prefix* hayan entrada por el mar Mediterráneo, así como el listado de los que entraron por el mar Rojo. Se deben omitir los meses en los que no haya entrado ningún barco por ambas entradas  o aquella entrada por la que no haya ingresado algún barco en un mes en particular.
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada**</span>
 ```
-16 2HU <br>
-01-01-20 00:17 R 2HUN5
-01-01-20 00:37 R 2AET2
-01-01-20 00:57 M 2HUQ5
-01-01-20 01:17 M 2FRW0
-01-01-20 01:37 M 4MXV8
-01-01-20 01:57 R 2HUG7
-01-01-20 02:17 R 1KIH9
-01-01-20 02:37 R 2HUX2
-01-01-20 02:57 M 3CFE2
-01-01-20 03:17 R 1TLD0
-01-01-20 03:37 R 3FRF4
-01-01-20 03:57 R 2HUK8
-01-01-20 04:17 M 0CFR7
-01-01-20 04:37 R 0TQL9
-01-01-20 04:57 R 2HUS4
-01-01-20 05:17 R 0FRX0
+27
+25-07-20 20:10 M 2FJU9
+05-01-20 10:16 M 1FRB6
+17-07-20 21:36 R 2FRZ9
+17-10-20 10:06 M 2TLR2
+24-04-20 14:15 M 2FJA8
+18-08-20 14:50 M 2ARL4
+19-11-20 07:08 M 2OIM0
+10-09-20 14:02 R 1TLP1
+24-05-20 12:36 M 2ARF7
+13-12-20 19:59 M 2MXB0
+05-10-20 17:04 R 2UYN7
+05-10-20 03:47 R 1AVM9
+13-04-20 12:29 M 1MXL3
+29-07-20 11:09 M 2ARA4
+04-10-20 14:32 R 1ARY0
+24-10-20 20:34 R 1ARU2
+25-04-20 21:28 M 2TLP1
+09-01-20 07:37 M 2FJX8
+28-09-20 20:22 M 2MXJ6
+12-10-20 10:28 R 1IJH1
+20-11-20 13:37 R 1MXT7
+30-10-20 12:52 M 1FRD9
+27-01-20 16:36 M 1FRB7
+07-02-20 00:21 M 2FJV6
+17-11-20 05:45 M 2ARF4
+01-02-20 01:55 R 2FJB6
+14-03-20 16:13 M 1MXU2
 ```
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida**</span>
 ```
-01-01-20 00:17 R 2HUN5
-01-01-20 00:57 M 2HUQ5
-01-01-20 01:57 R 2HUG7
-01-01-20 02:37 R 2HUX2
-01-01-20 03:57 R 2HUK8
-01-01-20 04:57 R 2HUS4
+jan
+M 1: 2FJX8
+feb
+M 1: 2FJV6
+R 1: 2FJB6
+apr
+M 1: 2FJA8
+jul
+M 1: 2FJU9
 ```
 
 Para probar tu implementación, compila tu programa con el comando:
