@@ -22,7 +22,7 @@ Ejemplo:
 ```
 Donde:
 * El punto de entrada puede ser **M – Mar Mediterráneo** y **R – Mar Rojo**.
-* La fecha estará entre **01-ENE-2020** y **31-DIC-2020**.
+* La fecha estará entre **01-01-2020** y **31-12-2020**.
 * El tiempo estará en formato de 24 Hrs.
 
 ## <span style="color: rgb(26, 99, 169);">**Entrada**</span>
