@@ -33,7 +33,7 @@ Deberás desplegar el listas por mes de los buques cuyo UBI empiece con *prefix*
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada**</span>
 ```
-27
+27 2FJ
 25-07-20 20:10 M 2FJU9
 05-01-20 10:16 M 1FRB6
 17-07-20 21:36 R 2FRZ9
